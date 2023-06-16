@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
- * main - main entry
- * return - 0=success
+ * main - Entry point
+ *
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	if (puts("\"Programming is like building a multilingual puzzle"));
+	if (puts("\"Programming is like building a multilingual puzzle") == EOF)
 	return (0);
 }
