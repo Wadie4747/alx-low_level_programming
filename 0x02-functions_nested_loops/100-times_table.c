@@ -26,18 +26,14 @@ void print_times_table(int n)
 					_putchar(' ');
 			}
 			if (k < 10)
-				_putchar(k + '0');
+				_putchar(' ');
 			else if (k < 100)
-			{
 				_putchar(k / 10 + '0');
-				_putchar(k % 10 + '0');
-			}
 			else
-			{
 				_putchar(k / 100 + '0');
-				_putchar(k / 10 + '0');
-				_putchar(k % 10 + '0');
-			}
+			if (k < 100)
+				_putchar(k / 10 % 10 + '0');
+			_putchar(k % 10 + '0');
 		}
 		_putchar('\n');
 	}
